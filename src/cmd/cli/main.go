@@ -102,9 +102,9 @@ func run() error {
 	// All subcommands that operate on `device` API
 	deviceSubcommands := []cli.Command{
 		{
-			Name:   "create",
-			Usage:  "create a device",
-			Flags:  newDeviceRequestOptions(),
+			Name:  "create",
+			Usage: "create a device",
+			Flags: newDeviceRequestOptions(),
 			Action: func(ctx *cli.Context) error {
 				return packet.CreateDevice(newDeviceRequest(ctx))
 			},
@@ -142,7 +142,7 @@ func run() error {
 					Usage: "items per page, default to 10, max 1_000",
 				},
 			},
-			Usage:  "Provides a collection of devices for a given project.",
+			Usage: "Provides a collection of devices for a given project.",
 			Action: func(ctx *cli.Context) error {
 				opts := &packngo.ListOptions{
 					Page:    ctx.Int("page"),
