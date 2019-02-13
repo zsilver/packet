@@ -1,6 +1,6 @@
 FROM golang:1.11.5 as builder
-RUN apk --no-cache add bash
-COPY ./src ./src
+COPY ./src/pkg ./src/pkg
+COPY ./src/cmd ./src/cmd
 COPY ./build_cli.sh ./
 RUN ./build_cli.sh
 
