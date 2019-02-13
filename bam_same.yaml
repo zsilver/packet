@@ -1,0 +1,48 @@
+about:
+  Name: Zane Silver
+  Location: Palo Alto, CA
+  Timezone: PT
+  hobbies:
+    - "rowing"
+    - "running"
+    - "micro-brewery beer tasting"
+# be a mentor
+bam:
+  skills:
+    - OTT video delivery services
+    - near real-time data streaming
+    - micro-services, serverless architectures, serverless functions
+    - ML/AI Platform Infrastructure (training & inference platforms)
+    - DevOps: CI/CL pipelines, IAM, Network/Firewalls, DNS… - not interested in it, just part of the job at a startup
+    - Public Cloud (AWS, GCP) Software deployments
+    - Private Cloud Software & Hardware deployments
+    - LTE/EPC - though certainly not an authoritative figure on the matter
+  languages/paradigms:
+    # Specify ["what", 1], level 1-10 (1 being justed learned, 10 you wrote/contributed to the language)
+    - ["Go", 9]
+    - ["Python", 8]
+    - ["Java", 6]
+    - ["c/c++", 6]
+    - ["Swift", 4]
+    - ["css/html/Javascript", 5]
+  frameworks/libraries/concepts:
+    # list in order of most recent
+    - serverless functions
+    - data streams (Kinesis, SQS, Kafka, Heron, Spark)
+# seek a mentor
+sam:
+  skills:
+    - Computer Datacenter Network Design
+    - Designing systems for massive scale
+    - Designing datacenters
+    - Edge Computing
+    - IoT
+    - ML/AI
+    - VR/AR
+    - Investing, Private & Public Equities Markets
+  languages/paradigms:
+    - Golang
+    - python
+    - ObjC/Swift
+  frameworks/libraries/concepts:
+    - any and all...
