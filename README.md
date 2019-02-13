@@ -20,6 +20,16 @@ docker run -it -e PACKET_AUTH_TOKEN=[secret token] zilver16/packet:latest list
 docker run -it -e PACKET_AUTH_TOKEN=[secret token] zilver16/packet:latest device list --id ca73364c-6023-4935-9137-2132e73c20b4
 ```
 
+* Create Device
+```
+docker run -it -e PACKET_AUTH_TOKEN=[secret token] zilver16/packet:latest device create --OS debian_8  --Plan m2.xlarge.x86 -ProjectID ca73364c-6023-4935-9137-2132e73c20b4 -BillingCycle hourly
+```
+
+* Delete Device
+```
+docker run -it -e PACKET_AUTH_TOKEN=[secret token] zilver16/packet:latest device delete --id [device UUID]
+```
+
 #### BUILD
 The binary is built inside of a two-stage docker build and produces a docker container containing the CLI binary.
 ```
