@@ -1,3 +1,10 @@
+// Wrapper around packet client calls
+//
+// Note the difficulty in testing this due to Packet's client API being a
+// struct and not an Interface. So we basically have to create our own
+// Packet Interface so that we can mock the client calls and do proper TDD.
+//
+// With time, I can add these unittest...
 package packet
 
 import (

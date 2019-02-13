@@ -1,3 +1,7 @@
+// The entrypoint for the CLI client
+// This is a simple helper tool for interacting with the Packet API
+// It's a first step in what would be needed to make a feature-rich
+// cli tool for Packet. Enjoy!
 package main
 
 import (
@@ -13,6 +17,14 @@ import (
 	"pkg/packet"
 )
 
+// Returns the cli Flags for a user to specify a New Device Request
+// Note
+//   Not all attributes are exposed (i.e. lists) but can be added later.
+//   This depends on reflection which is horribly difficult to maintain,
+//   error check, and is inefficient. Unfortunately Golang as language
+//   doesn't provide many options here for dynamically listing struct fields.
+//   This is a good indicator that Go may not be the best language for this
+//   specific use case.
 func newDeviceRequestOptions() []cli.Flag {
 
 	val := reflect.Indirect(reflect.ValueOf(packngo.DeviceCreateRequest{}))
@@ -53,6 +65,7 @@ func newDeviceRequestOptions() []cli.Flag {
 	return flags
 }
 
+// Converts a cli context into a New Device Request
 func newDeviceRequest(ctx *cli.Context) *packngo.DeviceCreateRequest {
 	device := &packngo.DeviceCreateRequest{}
 
