@@ -50,6 +50,15 @@ The individual binary can be built manually with the `./build_cli.sh` command.
   
 ## Feedback
 Overall this was very helpful in understanding the basics Packet's product(s). Minus a few questions that required an email notice, this worked fairly seemlessly.
+* ~2Hrs Development Time
+  * 1/2 hr spent understanding and testing the Packet API
+  * 1 hr spent trying out new CLI parsing tool (I just wanted to play with this) and reflection (it's been a while since I've used Golang's builtin reflection package)
+  * 1/2 Documenting (this), adding inline comments, and adding minor code style refactoring
+* TODO: 1 hr to add in unittests
+  * I'm loath to do this since Packet's client API is not an Interface. So it require a large amount of effort to unittest (see comments below).
+    * Basically I need to create a new Packet Client Interface
+    * Wrap the native packet client in a custom struct
+    * Then mock all calls to the real client for unittests.
 
 #### Bugs & Typos
 * Correct assigment FQS documentation typo "/project" → "/projects"
