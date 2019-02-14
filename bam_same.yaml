@@ -32,14 +32,19 @@ bam:
 # seek a mentor
 sam:
   skills:
-    - Computer Datacenter Network Design
-    - Designing systems for massive scale
-    - Designing datacenters
-    - Edge Computing
-    - IoT
-    - ML/AI
-    - VR/AR
-    - Investing, Private & Public Equities Markets
+    - leadership:
+      - Product/Project need finding
+      - Product/Idea Evangelist
+      - Team mentor and professional development
+    - technical:
+      - Computer Datacenter Network Design
+      - Designing systems for massive scale
+      - Designing datacenters
+      - Edge Computing
+      - IoT
+      - ML/AI
+      - VR/AR
+      - Investing, Private & Public Equities Markets
   languages/paradigms:
     - Golang
     - python
