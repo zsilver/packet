@@ -1,5 +1,11 @@
 # Packet API Integration
-This repository demostrates a basic [Packet API](https://www.packet.com/developers/api) integration using the [Golang client](https://godoc.org/github.com/packethost/packngo).
+This repository demostrates a basic [Packet API](https://www.packet.com/developers/api) integration using the [Golang client](https://godoc.org/github.com/packethost/packngo). This project is published to [Docker Hub](https://hub.docker.com/r/zilver16/packet).
+
+## TL;DR
+```
+docker run -it zilver16/packet:latest help
+```
+
 
 ## CLI Tool
 The cli tool is a basic interface to list, create, and delete devices (machines) from a terminal.
